@@ -1,0 +1,13 @@
+GetDriveType
+GetVolumeInformationByHandle
+GetFileInformationByHandleEx
+CreateDirectory
+FILE_ATTRIBUTE_TAG_INFO
+MoveFileEx
+RemoveDirectory
+OpenFileById
+GetFinalPathNameByHandle
+CreateFile
+FILE_ID_INFO
+FILE_BASIC_INFO
+FILE_STANDARD_INFO

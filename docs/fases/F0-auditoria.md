@@ -32,3 +32,7 @@ Resultado: **aprovada**, com duas observações que viram a lição L-12 e devem
 Reproduzido pela auditoria: `mkfile r` sem aviso nem erro; 12 testes passando (5 unidade, 7 integração), um comportamento por teste; host sem conexão TCP e segunda instância recusada; migrações embutidas na Persistência; nenhum comentário; raiz limpa.
 
 Tempo da desenvolvedora: 12 min (entrega), 203 min (correção 1), 231 min (correção 2).
+
+## Errata da arquitetura (auditoria da F1)
+
+A falha 7 da Auditoria 1 estava parcialmente errada: o `nuget.config` do repositório é necessário, porque o `NuGet.Config` global desta máquina tem mapeamento de origens de pacote que bloqueia pacotes não listados. A falha real foi só a falta de justificativa no relatório.

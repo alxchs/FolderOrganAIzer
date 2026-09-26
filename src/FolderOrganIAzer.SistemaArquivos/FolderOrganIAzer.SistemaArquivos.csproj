@@ -2,6 +2,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FolderOrganIAzer.Dominio\FolderOrganIAzer.Dominio.csproj" />
+    <PackageReference Include="Microsoft.Windows.CsWin32">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
   <PropertyGroup>

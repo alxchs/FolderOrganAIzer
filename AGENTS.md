@@ -53,6 +53,20 @@ Grave a saída bruta de cada comando de evidência em `docs/fases/<fase>-evidenc
 
 Declarar algo pronto sem evidência é a falha mais grave possível neste projeto.
 
+## Trava obrigatória antes de entregar
+
+Antes de escrever o relatório, rode `pwsh -NoProfile -File tools\verificar-regras.ps1 -Fase <fase>` e grave a saída como a última evidência (`99-verificar-regras.txt`). Com qualquer `VIOLACAO`, a entrega não está pronta: corrija e rode de novo. Não altere o script da trava.
+
+Capture as evidências com estes comandos exatos (a trava confere o conteúdo):
+
+- `pwsh -NoProfile -Command "mkfile r *>&1 | Out-File -Encoding utf8 docs\fases\<fase>-evidencias\01-mkfile-r.txt"`
+- `pwsh -NoProfile -Command "dotnet test FolderOrganIAzer.slnx *>&1 | Out-File -Encoding utf8 docs\fases\<fase>-evidencias\02-dotnet-test.txt"`
+
+## Ambiente desta máquina
+
+- O `NuGet.Config` global do usuário tem mapeamento de origens de pacote, então o repositório precisa do `nuget.config` próprio, na forma padrão: `<clear />` nas origens, só `nuget.org`, e mapeamento `<package pattern="*" />` para ela. Nunca liste pacote a pacote.
+- `Directory.CreateDirectory` e `Directory.Delete` são proibidos em `SistemaArquivos` e `Motor`, que mexem nas pastas do usuário. Em testes, para pastas temporárias, e na pasta de dados do app, são permitidos.
+
 ## Permissões
 
 Você tem permissão para executar comandos sem aprovação. Isso não muda nenhuma regra acima: continua proibido `git commit`, `git push`, `git reset`, `git checkout`, apagar arquivos que você não criou e tocar em qualquer coisa fora do repositório. Toda violação aparece na auditoria.
