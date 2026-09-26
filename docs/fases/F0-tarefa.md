@@ -13,6 +13,7 @@ Objetivo: o esqueleto que todas as fases usam. Nenhuma regra de negócio de orga
     - Migrações versionadas por `PRAGMA user_version`. A migração 1 cria o esquema completo da seção 5, exatamente como está lá (todas as tabelas, índices e os dois gatilhos do histórico).
     - Antes de cada migração, se o banco já existir com versão menor, faz `VACUUM INTO` para uma cópia datada na pasta de dados. A migração roda numa transação única.
 3. **Configuração.** `config.json` na pasta de dados com todos os parâmetros das tabelas da seção 16 e seus padrões. Validação das faixas. Arquivo ausente: cria com os padrões. Arquivo corrompido ou fora da faixa: usa os padrões, registra aviso no log e não para.
+    - Inclui também `PrecosModelos` (ainda não está na cópia da especificação): lista de itens com `provedor`, `modelo`, `entradaUsdPorMilhao`, `saidaUsdPorMilhao`, `leituraCacheUsdPorMilhao`. Padrões: `CLAUDE_API`/`claude-opus-5` 5,00/25,00/0,50; `CLAUDE_API`/`claude-sonnet-5` 2,00/10,00/0,20; `CLAUDE_API`/`claude-haiku-4-5` 1,00/5,00/0,10; `AGY`/`*` 0/0/0. Valores negativos são inválidos.
 4. **Logs.** Serilog com arquivo diário em `%LOCALAPPDATA%\FolderOrganIAzer\logs\`, retenção de 30 dias, e o filtro que troca qualquer texto no formato `sk-ant-...` por `[CHAVE]`.
 5. **Host (`FolderOrganIAzer.Host`).**
     - Mutex nomeado por usuário garantindo instância única: a segunda instância escreve uma mensagem no console e encerra com código diferente de zero, sem abrir o banco.
