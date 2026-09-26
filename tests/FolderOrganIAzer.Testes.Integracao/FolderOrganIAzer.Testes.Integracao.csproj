@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="xunit" />
+    <PackageReference Include="xunit.runner.visualstudio" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\FolderOrganIAzer.Motor\FolderOrganIAzer.Motor.csproj" />
+    <ProjectReference Include="..\..\src\FolderOrganIAzer.Host\FolderOrganIAzer.Host.csproj" />
+    <ProjectReference Include="..\..\src\FolderOrganIAzer.Persistencia\FolderOrganIAzer.Persistencia.csproj" />
+    <ProjectReference Include="..\..\src\FolderOrganIAzer.SistemaArquivos\FolderOrganIAzer.SistemaArquivos.csproj" />
+    <ProjectReference Include="..\..\src\FolderOrganIAzer.Extracao\FolderOrganIAzer.Extracao.csproj" />
+    <ProjectReference Include="..\..\src\FolderOrganIAzer.Classificacao\FolderOrganIAzer.Classificacao.csproj" />
+    <ProjectReference Include="..\..\src\FolderOrganIAzer.Dominio\FolderOrganIAzer.Dominio.csproj" />
+  </ItemGroup>
+
+</Project>

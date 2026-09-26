@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\FolderOrganIAzer.Dominio\FolderOrganIAzer.Dominio.csproj" />
+    <ProjectReference Include="..\FolderOrganIAzer.Persistencia\FolderOrganIAzer.Persistencia.csproj" />
+    <ProjectReference Include="..\FolderOrganIAzer.SistemaArquivos\FolderOrganIAzer.SistemaArquivos.csproj" />
+    <ProjectReference Include="..\FolderOrganIAzer.Extracao\FolderOrganIAzer.Extracao.csproj" />
+    <ProjectReference Include="..\FolderOrganIAzer.Classificacao\FolderOrganIAzer.Classificacao.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

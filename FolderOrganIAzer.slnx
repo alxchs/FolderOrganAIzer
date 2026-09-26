@@ -1,0 +1,16 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/FolderOrganIAzer.Dominio/FolderOrganIAzer.Dominio.csproj" />
+    <Project Path="src/FolderOrganIAzer.Persistencia/FolderOrganIAzer.Persistencia.csproj" />
+    <Project Path="src/FolderOrganIAzer.SistemaArquivos/FolderOrganIAzer.SistemaArquivos.csproj" />
+    <Project Path="src/FolderOrganIAzer.Extracao/FolderOrganIAzer.Extracao.csproj" />
+    <Project Path="src/FolderOrganIAzer.Extrator/FolderOrganIAzer.Extrator.csproj" />
+    <Project Path="src/FolderOrganIAzer.Classificacao/FolderOrganIAzer.Classificacao.csproj" />
+    <Project Path="src/FolderOrganIAzer.Motor/FolderOrganIAzer.Motor.csproj" />
+    <Project Path="src/FolderOrganIAzer.Host/FolderOrganIAzer.Host.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/FolderOrganIAzer.Testes.Unidade/FolderOrganIAzer.Testes.Unidade.csproj" />
+    <Project Path="tests/FolderOrganIAzer.Testes.Integracao/FolderOrganIAzer.Testes.Integracao.csproj" />
+  </Folder>
+</Solution>

@@ -1,0 +1,10 @@
+PID do Host: 23056
+Conexoes TCP (State = Listen):
+Get-NetTCPConnection : No MSFT_NetTCPConnection objects found with property 'OwningProcess' equal to '23056'.  Verify the value of the property and retry.
+At C:\desenv\utils\FolderOrganIAzer\test-tcp.ps1:18 char:10
++ $conns = Get-NetTCPConnection -OwningProcess $proc.Id
++          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (23056:UInt32) [Get-NetTCPConnection], CimJobException
+    + FullyQualifiedErrorId : CmdletizationQuery_NotFound_OwningProcess,Get-NetTCPConnection
+ 
+Nenhuma conexao TCP encontrada.
