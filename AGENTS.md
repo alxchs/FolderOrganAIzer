@@ -49,4 +49,10 @@ Ao terminar, escreva `docs/fases/<fase>-relatorio.md` com:
 3. O que não foi feito ou não passou, dito claramente.
 4. Dúvidas para a arquiteta.
 
+Grave a saída bruta de cada comando de evidência em `docs/fases/<fase>-evidencias/<numero>-<assunto>.txt` (por exemplo `01-mkfile-r.txt`, `02-dotnet-test.txt`), redirecionando a saída do próprio comando para o arquivo, sem editar o conteúdo. O relatório cita esses arquivos. A auditoria confere os arquivos e repete os comandos que parecerem duvidosos.
+
 Declarar algo pronto sem evidência é a falha mais grave possível neste projeto.
+
+## Permissões
+
+Você tem permissão para executar comandos sem aprovação. Isso não muda nenhuma regra acima: continua proibido `git commit`, `git push`, `git reset`, `git checkout`, apagar arquivos que você não criou e tocar em qualquer coisa fora do repositório. Toda violação aparece na auditoria.
