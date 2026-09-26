@@ -1,0 +1,18 @@
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  FolderOrganIAzer.Dominio -> C:\desenv\utils\FolderOrganIAzer\src\FolderOrganIAzer.Dominio\bin\Release\net10.0\FolderOrganIAzer.Dominio.dll
+  FolderOrganIAzer.Classificacao -> C:\desenv\utils\FolderOrganIAzer\src\FolderOrganIAzer.Classificacao\bin\Release\net10.0-windows10.0.19041.0\FolderOrganIAzer.Classificacao.dll
+  FolderOrganIAzer.Extrator -> C:\desenv\utils\FolderOrganIAzer\src\FolderOrganIAzer.Extrator\bin\Release\net10.0-windows10.0.19041.0\FolderOrganIAzer.Extrator.dll
+  FolderOrganIAzer.SistemaArquivos -> C:\desenv\utils\FolderOrganIAzer\src\FolderOrganIAzer.SistemaArquivos\bin\Release\net10.0-windows10.0.19041.0\FolderOrganIAzer.SistemaArquivos.dll
+  FolderOrganIAzer.Persistencia -> C:\desenv\utils\FolderOrganIAzer\src\FolderOrganIAzer.Persistencia\bin\Release\net10.0-windows10.0.19041.0\FolderOrganIAzer.Persistencia.dll
+  FolderOrganIAzer.Extracao -> C:\desenv\utils\FolderOrganIAzer\src\FolderOrganIAzer.Extracao\bin\Release\net10.0-windows10.0.19041.0\FolderOrganIAzer.Extracao.dll
+  FolderOrganIAzer.Motor -> C:\desenv\utils\FolderOrganIAzer\src\FolderOrganIAzer.Motor\bin\Release\net10.0-windows10.0.19041.0\FolderOrganIAzer.Motor.dll
+  FolderOrganIAzer.Host -> C:\desenv\utils\FolderOrganIAzer\src\FolderOrganIAzer.Host\bin\Release\net10.0-windows10.0.19041.0\FolderOrganIAzer.Host.dll
+  FolderOrganIAzer.Testes.Integracao -> C:\desenv\utils\FolderOrganIAzer\tests\FolderOrganIAzer.Testes.Integracao\bin\Release\net10.0-windows10.0.19041.0\FolderOrganIAzer.Testes.Integracao.dll
+  FolderOrganIAzer.Testes.Unidade -> C:\desenv\utils\FolderOrganIAzer\tests\FolderOrganIAzer.Testes.Unidade\bin\Release\net10.0-windows10.0.19041.0\FolderOrganIAzer.Testes.Unidade.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:24.88

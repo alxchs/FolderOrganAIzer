@@ -55,11 +55,11 @@ public class GerenciadorConfiguracao
     {
         bool mudou = false;
 
-        void Validar<T>(Func<T> get, Action<T> set, Func<T, bool> isValid, T padrao)
+        void Validar<T>(Func<T> obter, Action<T> definir, Func<T, bool> ehValido, T padrao)
         {
-            if (!isValid(get()))
+            if (!ehValido(obter()))
             {
-                set(padrao);
+                definir(padrao);
                 mudou = true;
             }
         }

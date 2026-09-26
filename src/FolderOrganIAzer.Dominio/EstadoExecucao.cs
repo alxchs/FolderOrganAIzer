@@ -1,0 +1,22 @@
+namespace FolderOrganIAzer.Dominio;
+
+public enum EstadoExecucao
+{
+    CRIADA,
+    VALIDANDO,
+    AGUARDANDO_CONFIRMACAO,
+    INVENTARIANDO,
+    EXTRAINDO,
+    AGUARDANDO_CUSTO,
+    CLASSIFICANDO,
+    REFINANDO,
+    AGUARDANDO_REVISAO,
+    PLANEJANDO,
+    CRIANDO_PASTAS,
+    MOVENDO,
+    FINALIZANDO,
+    CONCLUIDA,
+    PAUSADA,
+    CANCELADA,
+    FALHOU
+}

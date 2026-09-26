@@ -1,4 +1,3 @@
-using System;
 using System.IO;
 
 namespace FolderOrganIAzer.SistemaArquivos;
@@ -7,22 +6,22 @@ public static class CaminhoEstendido
 {
     public static string De(string caminho)
     {
-        if (string.IsNullOrWhiteSpace(caminho))
-            throw new ArgumentException("Caminho nulo ou vazio.", nameof(caminho));
+        if (string.IsNullOrEmpty(caminho)) return caminho;
+        if (caminho.StartsWith(@"\\?\")) return caminho;
 
-        if (caminho.StartsWith(@"\\?\UNC\", StringComparison.OrdinalIgnoreCase) ||
-            caminho.StartsWith(@"\\?\", StringComparison.OrdinalIgnoreCase))
+        var fullPath = Path.GetFullPath(caminho);
+        if (fullPath.StartsWith(@"\\"))
         {
-            return caminho;
+            return @"\\?\UNC\" + fullPath.Substring(2);
         }
+        return @"\\?\" + fullPath;
+    }
 
-        string completo = Path.GetFullPath(caminho);
-
-        if (completo.StartsWith(@"\\", StringComparison.OrdinalIgnoreCase))
-        {
-            return @"\\?\UNC\" + completo[2..];
-        }
-
-        return @"\\?\" + completo;
+    public static string RemoverPrefixo(string caminho)
+    {
+        if (caminho == null) return null!;
+        if (caminho.StartsWith(@"\\?\UNC\")) return @"\\" + caminho.Substring(8);
+        if (caminho.StartsWith(@"\\?\")) return caminho.Substring(4);
+        return caminho;
     }
 }

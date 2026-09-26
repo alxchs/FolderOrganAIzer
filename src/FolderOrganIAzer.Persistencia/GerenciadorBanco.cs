@@ -8,6 +8,11 @@ public class GerenciadorBanco
     private readonly string _caminhoBanco;
     private readonly string _caminhoPastaDados;
 
+    static GerenciadorBanco()
+    {
+        Dapper.DefaultTypeMap.MatchNamesWithUnderscores = true;
+    }
+
     public GerenciadorBanco(string caminhoPastaDados)
     {
         _caminhoPastaDados = caminhoPastaDados;

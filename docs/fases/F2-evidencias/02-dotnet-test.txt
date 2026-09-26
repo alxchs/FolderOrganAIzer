@@ -1,0 +1,19 @@
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  FolderOrganIAzer.Dominio -> C:\desenv\utils\FolderOrganIAzer\src\FolderOrganIAzer.Dominio\bin\Debug\net10.0\FolderOrganIAzer.Dominio.dll
+  FolderOrganIAzer.Classificacao -> C:\desenv\utils\FolderOrganIAzer\src\FolderOrganIAzer.Classificacao\bin\Debug\net10.0-windows10.0.19041.0\FolderOrganIAzer.Classificacao.dll
+  FolderOrganIAzer.Persistencia -> C:\desenv\utils\FolderOrganIAzer\src\FolderOrganIAzer.Persistencia\bin\Debug\net10.0-windows10.0.19041.0\FolderOrganIAzer.Persistencia.dll
+  FolderOrganIAzer.SistemaArquivos -> C:\desenv\utils\FolderOrganIAzer\src\FolderOrganIAzer.SistemaArquivos\bin\Debug\net10.0-windows10.0.19041.0\FolderOrganIAzer.SistemaArquivos.dll
+  FolderOrganIAzer.Extracao -> C:\desenv\utils\FolderOrganIAzer\src\FolderOrganIAzer.Extracao\bin\Debug\net10.0-windows10.0.19041.0\FolderOrganIAzer.Extracao.dll
+  FolderOrganIAzer.Motor -> C:\desenv\utils\FolderOrganIAzer\src\FolderOrganIAzer.Motor\bin\Debug\net10.0-windows10.0.19041.0\FolderOrganIAzer.Motor.dll
+  FolderOrganIAzer.Host -> C:\desenv\utils\FolderOrganIAzer\src\FolderOrganIAzer.Host\bin\Debug\net10.0-windows10.0.19041.0\FolderOrganIAzer.Host.dll
+  FolderOrganIAzer.Testes.Unidade -> C:\desenv\utils\FolderOrganIAzer\tests\FolderOrganIAzer.Testes.Unidade\bin\Debug\net10.0-windows10.0.19041.0\FolderOrganIAzer.Testes.Unidade.dll
+Test run for C:\desenv\utils\FolderOrganIAzer\tests\FolderOrganIAzer.Testes.Unidade\bin\Debug\net10.0-windows10.0.19041.0\FolderOrganIAzer.Testes.Unidade.dll (.NETCoreApp,Version=v10.0)
+  FolderOrganIAzer.Testes.Integracao -> C:\desenv\utils\FolderOrganIAzer\tests\FolderOrganIAzer.Testes.Integracao\bin\Debug\net10.0-windows10.0.19041.0\FolderOrganIAzer.Testes.Integracao.dll
+Test run for C:\desenv\utils\FolderOrganIAzer\tests\FolderOrganIAzer.Testes.Integracao\bin\Debug\net10.0-windows10.0.19041.0\FolderOrganIAzer.Testes.Integracao.dll (.NETCoreApp,Version=v10.0)
+A total of 1 test files matched the specified pattern.
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, Passed:    39, Skipped:     0, Total:    39, Duration: 302 ms - FolderOrganIAzer.Testes.Unidade.dll (net10.0)
+
+Passed!  - Failed:     0, Passed:    35, Skipped:     0, Total:    35, Duration: 7 s - FolderOrganIAzer.Testes.Integracao.dll (net10.0)

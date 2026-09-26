@@ -20,3 +20,7 @@ Cada lição nasce de um erro real encontrado na auditoria. Vale para todas as f
 | L-14 | Lições não bastam: rode a trava `tools\verificar-regras.ps1` antes de todo relatório. Entregar com violação na trava é entregar reprovado. | F1 |
 | L-15 | Lógica repetida vira uma função única. Em especial, o prefixo `\\?\` desliga a normalização do Windows: todo caminho passa por uma única função que aplica `Path.GetFullPath` antes do prefixo. | F1 |
 | L-16 | Um método tem uma única forma de dizer "não encontrado" (nulo ou resultado tipado), nunca nulo num ramo e exceção no outro. | F1 |
+| L-17 | Classe que só os testes usam não está entregue. O código de produção precisa chamá-la: quem grava a transição consulta a máquina de estados; quem cria e mantém a execução usa a trava (batimento, zeragem do dono). | F2 |
+| L-18 | Data gravada ou serializada segue a seção 5 da especificação (ISO 8601 UTC, milissegundos, `Z`), por uma única função de formatar e uma de ler. Nunca `ToString("o")`. | F2 |
+| L-19 | Cada caso listado na tarefa vira um teste com o nome do caso. Se o ambiente não produz a situação (rede, FAT), injete a consulta por interface e teste com falso; o que não puder ser provado em disco real vai declarado no relatório, nunca omitido. | F2 |
+| L-20 | Toda afirmação de comportamento no relatório ("zera o dono", "conduz o fluxo") cita arquivo e método, e o teste que a exercita. Afirmação sem código é afirmação falsa (reincidência de L-11). | F2, reincidente de L-11 |

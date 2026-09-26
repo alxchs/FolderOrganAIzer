@@ -283,4 +283,27 @@ public static class OperacoesDisco
         }
         return null;
     }
+
+    public static unsafe string? ObterCaminhoReal(string caminho)
+    {
+        string caminhoLongo = CaminhoEstendido.De(caminho);
+        using var handle = PInvoke.CreateFile(
+            caminhoLongo,
+            0,
+            FILE_SHARE_MODE.FILE_SHARE_READ,
+            null,
+            FILE_CREATION_DISPOSITION.OPEN_EXISTING,
+            FILE_FLAGS_AND_ATTRIBUTES.FILE_FLAG_BACKUP_SEMANTICS,
+            null);
+
+        if (!handle.IsInvalid)
+        {
+            string? caminhoReal = LerCaminhoFinal(handle);
+            if (caminhoReal != null)
+            {
+                return CaminhoEstendido.RemoverPrefixo(caminhoReal);
+            }
+        }
+        return null;
+    }
 }
